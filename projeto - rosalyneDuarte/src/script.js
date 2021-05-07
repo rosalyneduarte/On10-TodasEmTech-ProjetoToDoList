@@ -58,7 +58,31 @@ botao.addEventListener('click', (event) => {
     deletaElemento.addEventListener('click', () => {
         elementoLista.remove();  // listaTarefas.removeChild(elementoLista) .... A mesma coisa de forma diferente
     });
+/*
+    botaoMarcarTodos.addEventListener('click', () => {
+        if(botaoMarcarTodos.innerText === 'Marcar todos') {
+            const todosParagrafos = document.querySelectorAll('p');
+            console.log(todosParagrafos, 'Vai retornar todos os <p> encontrados');
 
+            todosParagrafos.forEach(item =>{
+                item.classList.add('checked')
+            });
+            botaoMarcarTodos.innerText = 'Desmarcar todos'
+        } else {
+            const todosParagrafos = document.querySelectorAll('p');
+            todosParagrafos.forEach(item => {
+                item.classList.remove('checked')
+            })
+            botaoMarcarTodos.innerText = 'Marcar Todos'
+        }
+    });
+   
+    // Todo função de marcar todos
+    botaoLimpar.addEventListener('click', () => {
+        elementoLista.remove() // listaTarefas.innerHTML = ' '; A mesma coisa de fazer ; listaTarefas.removeChild(li)
+      });
+*/
+   // AQUI INICIA A PARTE ANTERIOR
     // Todo função de marcar todos
     botaoMarcarTodos.addEventListener('click', () => {
        const todosParagrafos = document.querySelectorAll('p');
